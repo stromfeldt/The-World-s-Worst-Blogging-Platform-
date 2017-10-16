@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="en" class="no-js">
+
+<head>
+
+    <title>YEAR blog posts</title>
+
+    <meta charset="utf-8">
+
+    <!--#include virtual="/grabbag/css-favicon.html" -->
+
+    <!--#include virtual="/grabbag/scripts.html" -->
+
+    <!--#include virtual="/grabbag/meta.html" -->
+    <meta name="description" content="YEAR blog posts">
+    <meta name="robots" content="noindex">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header>
+
+            <!--#include virtual="/grabbag/topline.html" -->
+
+            <!--#include virtual="/grabbag/dropdown.html" -->
+
+            <!--#include virtual="/grabbag/navbar.html" -->
+
+        </header>
+
+        <div id="leftandright" class="cf">
+
+            <main id="left-panel">
+
+                <div class="no-website-block no-print">
+
+                <!--#include virtual="/intros/mobile-and-categories/YEAR/YEAR-MM-DD.html" -->
+
+                </div>
+
+                <div class="no-mobiles">
+
+                <!--#include virtual="/intros/standard/YEAR/YEAR-MM-DD.html" -->
+
+                </div>
+
+                <div class="buttons-year">
+                    <a href="/blog/YEAR" class="myButton button-left" title="YEAR blog posts">&lt;&nbsp;&nbsp;YEAR&nbsp;&nbsp;</a>
+                    <a href="/" class="myButton button-home"><span class="home-center">Home</span></a>
+                    <span class="myButton-inactive button-right-inactive">&nbsp;</span>
+                </div>
+
+            </main>
+
+            <aside id="right-panel">
+
+                <!--#include virtual="/grabbag/boxes.html" -->
+
+            </aside>
+
+        </div>
+
+        <!--#include virtual="/grabbag/scrollup-link.html" -->
+
+        <!--#include virtual="/grabbag/footline.html" -->
+
+    </div>
+
+    <script>
+        function preload(arrayOfImages) {
+            $(arrayOfImages).each(function () {
+                $('<img/>')[0].src = this;
+            });
+        }
+        preload([
+            <!--#include virtual="/grabbag/preload-images.html" -->
+        ]);
+    </script>
+
+    <!--#include virtual="/grabbag/bottom-javascripts-no-treescript.html" -->
+
+    <script>
+		$(".blogtree").treetable({
+			expandable: true,
+			clickableNodeNames: false,
+			initialState: "collapsed",
+			indent: 15,
+		})
+        $(".blogtree").treetable("expandNode", "X")
+        $(".blogtree").treetable("expandNode", "X.X")
+		;
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html lang="en" class="no-js">
+
+<head>
+
+    <title>MONTH, YEAR | BLOG NAME</title>
+
+    <meta charset="utf-8">
+
+    <!--#include virtual="/grabbag/favicons.html" -->
+
+    <!--#include virtual="/grabbag/css.html" -->
+
+    <!--#include virtual="/grabbag/scripts.html" -->
+
+    <!--#include virtual="/grabbag/meta.html" -->
+    <meta name="description" content="Blog posts from MONTH, YEAR">
+    <meta name="robots" content="noindex">
+
+    <!--#include virtual="/grabbag/piwik.html" -->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header>
+
+            <!--#include virtual="/grabbag/topline.html" -->
+
+            <!--#include virtual="/grabbag/dropdown.html" -->
+
+            <!--#include virtual="/grabbag/navbar.html" -->
+
+        </header>
+
+        <div id="leftandright" class="cf">
+
+            <main id="left-panel">
+
+                <div class="no-website-block no-print">
+
+                <!--#include virtual="/blog/intros/mobile-and-categories/YEAR/YEAR-MM-DD.html" -->
+
+                </div>
+
+                <div class="no-mobiles">
+
+                <!--#include virtual="/blog/intros/standard/YEAR/YEAR-MM-DD.html" -->
+
+                </div>
+
+                <div class="buttons-year">
+                    <a href="/blog/YEAR/MONTH" class="myButton button-left" title="MONTH, YEAR blog posts">&lt;&nbsp;&nbsp;MONTH (three characters) YEAR</a>
+                    <a href="/" class="myButton button-home"><span class="home-center">Home</span></a>
+                    <a href="/blog/YEAR/MONTH" class="myButton button-right" title="MONTH, YEAR blog posts">MONTH (three characters) YEAR&nbsp;&nbsp;&gt;</a>
+                </div>
+
+            </main>
+
+            <aside id="right-panel">
+
+                <!--#include virtual="/grabbag/boxes.html" -->
+
+            </aside>
+
+        </div>
+
+        <!--#include virtual="/grabbag/scrollup-link.html" -->
+
+        <!--#include virtual="/grabbag/footline.html" -->
+
+    </div>
+
+    <script>
+        function preload(arrayOfImages) {
+            $(arrayOfImages).each(function () {
+                $('<img/>')[0].src = this;
+            });
+        }
+        preload([
+            <!--#include virtual="/grabbag/preload-images.html" -->
+        ]);
+    </script>
+
+    <!--#include virtual="/grabbag/bottom-javascripts-no-treescript.html" -->
+
+    <script>
+        $(".blogtree").treetable({
+            expandable: true,
+            clickableNodeNames: false,
+            initialState: "collapsed",
+            indent: 15,
+        })
+        $(".blogtree").treetable("expandNode", "X")
+        $(".blogtree").treetable("expandNode", "X.X")
+        ;
+    </script>
+
+</body>
+
+</html>
