@@ -1,0 +1,257 @@
+
+// globals
+//////////////////////////////////////////////
+@mixin border_radius_even($a)
+	-webkit-border-radius: $a
+	-moz-border-radius: $a
+	border-radius: $a
+
+@mixin viewport($media)
+	@if $media == mobile
+		@media only screen and (max-width: 350px)
+			@content
+
+// type
+$font-size: 13px
+$font-family: Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif
+
+// form
+$form-width: 400px
+$field-width-short: 300px
+
+// label
+$label-weight: bold  // normal or bold
+
+// input
+$input-height: 27px
+$input-padding: 4px
+
+// colors
+$yellow-light: #ffffe6
+
+$gray-light: #fcfcfc
+$gray: #ccc
+$gray-dark: #666
+
+$red: #ff2a2a
+$red-dark: #d40303
+
+$green-lighter: #87de87
+$green-light: #2ca02c
+$green: #00aa00
+$green-dark: #005500
+
+$blue-lighter: #5599ff
+$blue-light: #2a7fff
+$blue: #0055d4
+$blue-dark: #0044aa
+
+// 1 x 1 pixel squares in data uri form
+$gray-pixel: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQxKUbwz30AAAANSURBVAjXY/j06dN/AAmGA9YRinsqAAAAAElFTkSuQmCC)
+$yellow-pixel: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQxH4lKWuQAAAANSURBVAjXY/j/f9d/AAlxA7iU/lWYAAAAAElFTkSuQmCC)
+$red-pixel: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQpIL0374AAAAANSURBVAjXY/h/9ep/AAkpA6nx+1etAAAAAElFTkSuQmCC)
+$green-pixel: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQwJCFagoEAAAANSURBVAjXY7j+5fp/AAjqA6K5jX8QAAAAAElFTkSuQmCC)
+
+// errors
+// 10px X 5px arrow
+$error-arrow-top: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABCSURBVAiZdYzBDcAgEMNCxwlDch2SecwH0QPUSPkklgugLbWGJKn32Hbgqx3YzEb+nsPUkqMtuzTBG7rggv0H5bwDQ4coY9OOIYEAAAAASUVORK5CYII=)
+
+// icons
+$icon-check: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAMCAYAAAC9QufkAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACHSURBVCiRpdCxCYIxFEXhJ2hl6wBO4Aru4EJmC6dwB/8RnMBWsLWy8LMxEmICEi+EwLs5B14CMXCSf0AcRsETFiPgBStEWaQfwDs2eV4WOoLcP7EruxquBWW3r8WtR1lQzo6Y9eCWIOeMZesvevvl3LBugS24FDyw7YGIeXwnve9rREyN/pMXv20c0OtO6lgAAAAASUVORK5CYII=)
+$icon-waiting: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAADCAYAAABI4YUMAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAwSURBVAiZY/j//3/h////H0FpBijGK8YAZfyB0jAFeMWYGBgY+hkYGJ5BaRjAKwYAJmBhTdrC7roAAAAASUVORK5CYII=)
+$icon-email: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAYAAAACTR1pAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACDSURBVCiRlZCxDcIwFERfHGqXTJBB2CtSOhZhArbICpSpKakdPZoPMiER4aSTrbt7zW/UG3AEMvv0AO4J6IArMO6Axth2jVoiPAMz0APtApijb6MnVWUf7wmYqnyKrN6AWhYe1Kxewjmyj90a+IIJf0FqOWwcYdj4v1Uf5y+l35N1PQELJ4H5a5SMTgAAAABJRU5ErkJggg==)
+
+// RESET
+// generic styles, excludes dimensions
+#get-notified
+	ul, li, input, textarea
+		margin: 0
+		padding: 0
+		border: 0
+		list-style: none
+		font: $font-size $font-family
+		line-height: 1.4
+	ul
+		li
+			// reset list style to block incase it the default was overridden
+			display: block
+			&.error
+				span
+					font-weight: bold
+					width: auto
+			label
+				font-weight: $label-weight
+				&:hover
+					cursor: pointer
+			input[type=text], textarea
+				border: 1px solid #ccc
+				outline: 0
+				box-sizing: content-box
+				-webkit-appearance: none
+				-webkit-border-radius: 0
+			input
+				width: auto
+			ul
+				li
+					label
+						font-weight: normal
+					// radio/check main labels
+					&:first-child
+						label
+							font-weight: $label-weight
+
+
+// DEFAULT LAYOUT
+// all dimensions go here, and paddings/margins
+#get-notified
+	float: left
+	margin: 20px 0
+	width: $form-width // account for borders
+	ul
+		width: $form-width
+		li
+			margin-top: 15px
+			label
+				display: block
+				margin-bottom: 4px
+			input[type=text]
+				padding: 0 $input-padding
+				width: $field-width-short - (2 + ($input-padding * 2))  // account for border and padding
+				height: $input-height - 2px  // account for border
+			textarea
+				width: $form-width - (2 + ($input-padding * 2))
+				padding: $input-padding
+				height: 100px
+				+viewport(mobile)
+					width: $field-width-short - (2 + ($input-padding * 2))
+			select
+				width: $field-width-short
+				height: $input-height
+			input[type=submit]
+				+border_radius_even(2px)
+				text-transform: uppercase
+				font-weight: bold
+				border: 1px solid transparent
+				padding: 0 15px 0 40px
+				height: $input-height + 5px
+				line-height: $input-height + 5px
+				cursor: pointer
+			&:first-child
+				margin-top: 0
+			&.error
+				span
+					width: $field-width-short - 20px  // account for border and padding on the input field
+					display: block
+					margin-top: 10px
+					padding: 0 10px
+					line-height: $input-height
+					position: relative
+					+border_radius_even(2px)
+					&:before
+						content: ""
+						display: block
+						position: absolute
+						top: -5px
+						left: 10px
+						width: 10px
+						height: 5px
+				textarea + .error-message
+					width: $form-width - 20px
+					+viewport(mobile)
+						width: $field-width-short - 20px
+			ul
+				li
+					margin-top: 0
+					label
+						+border_radius_even(2px)
+						input[type=radio], input[type=checkbox]
+							margin-right: 10px
+							position: relative
+							top: 2px
+							left: 2px
+							width: auto
+							height: auto
+	&.ie7
+		input[type=submit]
+			padding: 0 15px
+			background-image: none
+	&.ie6
+		.input-text, .textarea
+			width: $field-width-short
+			height: $input-height
+			border: 1px solid #aaa
+		.textarea
+			width: $form-width
+			height: 200px
+// DEFAULT COLOR SCHEME
+// only colors go here
+#get-notified
+	*
+		color: #444
+	ul
+		li
+			input[type=text], textarea
+				border-color: $gray
+				border-top-color: $gray-dark
+				background: white $gray-pixel left top repeat-x
+				&:focus
+					background-color: $yellow-light
+					background-image: $yellow-pixel
+			&.error
+				span
+					background: $red
+					color: white
+					&:before
+						background: $error-arrow-top
+				input[type=text], textarea
+					border-color: $red
+					border-top-color: $red-dark
+					background-image: $red-pixel
+					&:focus
+						background-image: $red-pixel
+			&.success
+				input[type=text], textarea
+					border-color: $green-lighter
+					border-top-color: $green-light
+					background-image: $green-pixel
+					&:focus
+						background-image: $green-pixel
+			ul
+				li
+					// all nested ul's at the moment are checks and radio
+					&:first-child
+						label:hover
+							background: none
+					label
+						margin: 0
+						padding: 0 $input-padding
+						line-height: $input-height
+						width: $field-width-short - $input-padding
+						&:hover
+							background: $gray-light
+						input[type=radio], input[type=checkbox]
+			input[type=submit]
+				color: white
+				background: $blue $icon-email 15px center no-repeat
+				border-color: darken($blue, 5%)
+				&:hover
+					background-color: lighten($blue, 5%)
+					border-color: $blue
+				&:active
+					background-color: darken($blue, 2%)
+					border-color: darken($blue, 5%)
+				&.sending
+					background-color: #e6e6e6
+					background-image: $icon-waiting
+					background-position-y: 18px
+					border-color: $gray
+				&.sent
+					background-color: $green
+					background-image: $icon-check
+					background-position-x: 13px
+					border-color: $green-dark
+				&.try-again
+					background-color: $red
+					background-image: $icon-email
+					background-position-x: 13px
+					border-color: $red-dark
