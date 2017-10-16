@@ -1,0 +1,616 @@
+/* ------ SET-UP ------ */
+
+.no-website-block {
+    display: block !important;
+}
+.no-website-inline {
+    display: inline !important;
+}
+.no-website-table {
+    display: table !important;
+}
+#right-panel, .no-mobiles, .no-mobiles-no-print, .no-mobiles-yes-print, .box-title, .flags, .floatright, .floatleft, .floatcenter {
+    display: none !important;
+}
+a {
+    -o-transition: none;
+    -ms-transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    transition: none;
+    color: #2c7d61 !important;
+}
+
+/* ------ ALIGNMENT ------ */
+
+body {
+    width: 320px;
+    background: #FFFFFF;
+ /*    padding-top: 120px; HIDE HEADER */
+}
+#wrapper {
+    width: 320px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#leftandright {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#left-panel {
+    position: relative;
+    width: 320px;
+    margin-top: 90px;
+}
+article {
+    margin-bottom: 25px;
+}
+.up-for-mobiles {
+    top: -25px;
+}
+
+/* ------ HEADER ------ */
+/*
+.mobile-title {
+    position: relative;
+}
+.mobile-title img {
+    position: relative;
+    width: 320px;
+    padding: 0px;
+    margin: 0px;
+}*/
+.mobile-title {
+    position: relative;
+    background: url('images/miscellaneous/line-header-retina-mobile.png');
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 73px;
+    z-index: 20;
+}
+#shovel-topline img {
+    width: 57px;
+    left: 7px;
+    top: -78px;
+}
+#FF2F-topline img {
+    width: 239px;
+    left: 20px;
+    top: -21px;
+}
+#FCP2PC-topline img {
+    width: 198px;
+    left: 61px;
+    top: 4px;
+}
+
+/* ------ BLOG POSTS ------ */
+
+h1, h2 {
+    width: 300px !important;
+    margin-left: 10px !important;
+    font-size: 21px !important;
+    top: 0px !important;
+    line-height: 27px !important;
+    margin-bottom: 17px !important;
+}
+.dotted {
+    border: 0px;
+    width: 300px;
+    background: url('images/miscellaneous/dotted_line.png') 0 0 repeat-x;
+    margin-left: 10px;
+    height: 1px;
+    top: -4px;
+}
+.blog-title-and-date {
+    margin-bottom: 1px !important;
+}
+.blog-date {
+    font-size: 12px !important;
+    bottom: auto !important;
+    top: -22px !important;
+    left: 0px;
+}
+.greyed-date {
+    background-color: #adadad;
+    padding: 2px;
+    color: #ffffff;
+}
+.blog-title-part {
+    font-size: 16px !important;
+}
+p {
+    width: 300px !important;
+    margin: 12px 0px 18px 10px !important;
+    font-size: 15px !important;
+    line-height: 21px !important;
+}
+blockquote {
+    margin: 10px 0px 16px 20px !important;
+}
+blockquote p {
+    width: 280px !important;
+    font-size: 14px !important;
+    line-height: 19px !important;
+}
+#book-quote {
+    width: 280px;
+    margin: 12px 0px 0px 30px;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: left;
+}
+.para-points {
+    width: 260px;
+    font-size: 15px;
+    line-height: 21px;
+}
+.grey-at-end-of-post {
+    font-size: 12px;
+    line-height: 14px;
+}
+#parts {
+    margin-top: 20px !important;
+}
+#parts ul {
+    font-size: 12px !important;
+}
+#parts ul li {
+    padding: 0px 5px 0px 5px !important;
+}
+#filed-under {
+    margin-top: 20px !important;
+}
+#filed-under ul {
+    font-size: 12px !important;
+}
+#filed-under ul li {
+    padding: 0px 5px 0px 5px !important;
+}
+.filed-buffer-for-mobiles {
+    position: relative;
+    margin-bottom: 3px;
+}
+#share {
+    margin-top: 20px !important;
+}
+.social-split-for-mobiles{
+    position: relative;
+    margin-bottom: 8px;
+}
+#fb {
+    top: -4px;
+}
+#twit-butt {
+    left: 1px;
+}
+#linkedin {
+    top: 0px !important;
+}
+#pinterest {
+}
+#reddit {
+    top: 2px !important;
+}
+#g-plus {
+}
+.non-blog-title {
+	position: absolute !important;
+    top: -42px !important;
+}
+.non-blog-title-privacy-policy {
+	position: absolute !important;
+    top: 0px !important;
+}
+.soundcloud-podcast {
+    margin-top: 15px !important;
+    margin-bottom: 10px !important;
+    width: 298px !important;
+    margin-left: 10px;
+}
+.podcast-heading {
+    width: 300px;
+    margin-left: 10px;
+}
+#translation-boxes {
+    width: 280px !important;
+    padding-top: 7px !important;
+}
+.translation-box {
+    margin-left: 10px;
+    width: 280px !important;
+    margin-top: 20px;
+}
+.translations-text {
+    margin: 0px !important;
+    width: 280px !important;
+}
+.translations-flag {
+    top: 0px;
+    width: 48px;
+}
+.fanfare-youtube {
+    position: relative;
+    width: 300px;
+    height: 169px;
+    left: 10px;
+}
+
+/* ------ WHOOPS ------ */
+
+#whoops {
+    font-size: 40px !important;
+    margin-top: 30px !important;
+}
+#whoops-camera {
+    left: 13px !important;
+    width: 300px !important;
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
+}
+#whoops-camera img {
+    width: 300px;
+}
+#whoops-para {
+    width: 300px;
+    margin-left: 10px;
+    font-size: 15px !important;
+    line-height: 21px !important;
+    margin-bottom: 100px;
+}
+
+/* ------ IMAGES ------ */
+
+figure {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+figure img {
+    width: 298px;
+    border: 1px solid #000;
+}
+figcaption {
+    font-size: 12px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.mobile-images-small {
+    margin-top: 18px !important;
+    margin-right: 10px !important;
+    margin-bottom: 10px;
+    margin-left: 10px !important;
+}
+.mobile-images-small img {
+    width: 143px !important;
+}
+.after-ul {
+    margin-top: 10px;
+}
+.after-quote {
+    margin-top: 20px;
+}
+.floatright-tweet, .floatleft-tweet {
+    margin: 0px 10px 10px 10px;
+}
+
+/* ------ BUTTONS ------ */
+
+.buttons-year {
+    position: relative;
+    margin-top: 80px;
+    top: -40px;
+}
+.buttons-post-top {
+    position: relative;
+    margin-top: 70px;
+    top: -25px;
+}
+.buttons-post-podcasts-top {
+    position: relative;
+    margin-top: 20px;
+    top: -15px;
+}
+.buttons-post-podcasts-bottom {
+    position: relative;
+    margin-top: 100px;
+    top: -60px;
+}
+.buttons-post-bottom {
+    position: relative;
+    margin-top: 100px;
+    top: -50px;
+}
+.myButton, myButton-podcasts, .myButton-inactive {
+    font-size: 10px !important;
+}
+.button-left {
+    position: relative;
+    float: left;
+    left: 10px;
+    width: 90px;
+    height: 10px;
+    text-align: center;
+    font-size: 10px !important;
+    font-weight: normal;
+    padding: 5px 0px 10px 0px !important;
+}
+.button-left:active {
+    top: 0px !important;
+}
+.button-left-inactive {
+    position: relative;
+    float: left;
+    left: 10px;
+    width: 88px;
+    height: 8px;
+    text-align: center;
+    font-size: 10px !important;
+    font-weight: normal;
+    padding: 5px 0px 10px 0px !important;
+}
+.button-home {
+    position: relative;
+    float: left;
+    left: 40px;
+    width: 60px;
+    height: 10px;
+    text-align: center;
+    font-size: 10px !important;
+    font-weight: normal;
+    padding: 5px 0px 10px 0px !important;
+}
+.button-home:active {
+    top: 0px !important;
+}
+.button-podcasts-home {
+    position: relative;
+    float: left;
+    left: 40px;
+    width: 60px;
+    height: 10px;
+    text-align: center;
+    font-size: 10px !important;
+    font-weight: normal;
+    padding: 5px 0px 10px 0px !important;
+}
+.button-podcasts-home:active {
+    top: 0px !important;
+}
+.home-center {
+    left: 0px !important;
+}
+.podcasts-center {
+    left: 0px !important;
+}
+.button-right {
+    position: relative;
+    float: right;
+    right: 10px;
+    width: 90px;
+    height: 10px;
+    text-align: center;
+    font-size: 10px !important;
+    font-weight: normal;
+    padding: 5px 0px 10px 0px !important;
+}
+.button-right:active {
+    top: 0px !important;
+}
+.button-right-inactive {
+    position: relative;
+    float: right;
+    right: 10px;
+    width: 88px;
+    height: 8px;
+    text-align: center;
+    font-size: 10px !important;
+    font-weight: normal;
+    padding: 5px 0px 10px 0px !important;
+}
+
+/* ------ FOOTER ------ */
+
+footer {
+    margin-top: 0px !important;
+}
+#footline {
+    background: url('images/miscellaneous/line-footer-mobile.png') !important;
+    height: 55px !important;
+}
+#footline-stuff {
+    top: 19px !important;
+}
+.footlinetext {
+    font-size: 10px !important;
+    line-height: 13px !important;
+    margin: 5px 0px 5px 0px !important;
+}
+
+/* ------ COMMENTICS ------ */
+
+.cmtx_submit_button, .cmtx_name_field, .cmtx_email_field, .cmtx_website_field, .cmtx_textarea_field, .cmtx_comment_box_1, .cmtx_comment_box_2, .cmtx_admin_comment_box_1, .cmtx_admin_comment_box_2, .cmtx_no_comments_text, .cmtx_icons_container, .cmtx_counter, .cmtx_comments_heading, .cmtx_powered_by, .cmtx_no_comments, .cmtx_form_heading {
+    margin-left: 10px;
+    width: 300px !important;
+}
+.cmtx_gravatar_area {
+    position: relative;
+    float: left !important;
+    margin-left: 5px;
+}
+.cmtx_comment_area, .cmtx_reply_area {
+    text-align: left;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cmtx_comment_area p, .cmtx_reply_area p {
+    width: 214px !important;
+    margin-left: 0px !important;
+}
+.cmtx_date, .cmtx_comments_heading, .cmtx_form_heading {
+    text-align: left;
+    font-family: Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.cmtx_user_area {
+    margin-top: 0px !important;
+    font-family: Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 17px;
+}
+.cmtx_comment_box {
+    margin-bottom: 0px !important;
+}
+.cmtx_main_area {
+    position: relative;
+    top: -5px;
+}
+
+/*
+.cmtx_name_field, .cmtx_email_field, .cmtx_website_field, .cmtx_textarea_field, .cmtx_comment_box_1, .cmtx_comment_box_2, .cmtx_admin_comment_box_1, .cmtx_admin_comment_box_2, .cmtx_no_comments_text {
+    width: 286px !important;
+    margin-left: 10px;
+}
+.cmtx_comments_heading, .cmtx_form_heading, .cmtx_label {
+    margin-left: 10px;
+    width: 200px !important;
+}
+.cmtx_submit_button, .cmtx_preview_button {
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+.cmtx_website_field {
+    margin-bottom: 10px;
+}
+.shrink-button-space {
+    width: 1px !important;
+}
+#first-comment {
+    font-size: 12px !important;
+    margin-bottom: 11px !important;
+}
+*/
+
+/* ------ Mega Dropdown ------ */
+
+.dropdown-font a, .dropdown-font nav h4, .dropdown-font nav ul li a {
+  font-family: sans-serif;
+  text-decoration: none !important;
+}
+.dropdown-header {
+    text-align: center;
+    position: relative;
+    left: -3px !important;
+    z-index: 200;
+}
+.dropdown-flag {
+    position: relative;
+    top: 3px;
+    width: 30px;
+    margin-right: 13px;
+}
+
+/* ------ DROPDOWN ------ */
+
+.dropdown-on-top {
+    z-index: 200;
+    padding: 0px !important;
+}
+.upsy {
+    position: relative;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 60px;
+    margin-bottom: 60px;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+/* ------ MOBILE ADAPTED ------ */
+
+#author-photo {
+    position: relative;
+    float: right;
+    padding: 0px 11px 10px 10px !important;
+    top: 4px;
+}
+#box-author-bio, #box-getnotified, #box-translations, #box-links {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    margin-top: 0px;
+    padding: 0px;
+}
+/*
+#twitter-on-mobile-getnotified-page {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+}
+*/
+#twitter-on-mobile-author-page {
+    position: relative;
+    margin: 20px 0px 20px 10px;
+}
+#google-on-mobile-author-page {
+    position: relative;
+    top: -49px;
+    left: 198px;
+}
+#twitter-on-mobile-getnotified-page {
+    position: relative;
+    margin: 20px 0px 0px 10px;
+}
+#google-on-mobile-getnotified-page {
+    position: relative;
+    top: -29px;
+    left: 198px;
+}
+.right-panel-boxtext {
+    width: 300px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    margin-left: 10px;
+    font-size: 15px;
+    line-height: 21px;
+}
+.right-panel-boxtext-posts {
+    margin-bottom: 0px !important;
+}
+.get-notified-alignment {
+    margin-left: 10px;
+}
+#get-notified ul li {
+    margin-top: 15px;
+}
+.fix-the-bottom-margin {
+    margin-bottom: 0px;
+}
+.email-input-up {
+    position: relative;
+    top: -3px;
+}
+.dropdown-header {
+    text-align: center;
+    color: #FFFFFF !important;
+}
+#rss {
+    top: 18px;
+    left: 150px;
+    z-index: 1 !important;
+}
+.twitter-tweet {
+    width: 300px !important;
+}
+#weblinks p {
+    margin-bottom: 0px;
+}
+
+
+/* ------ TEMP ------ */
+
+#mars-widget {
+    float: none;
+    left: 49px;
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en" class="no-js">
+
+<head>
+
+    <title>Whoops! (404)</title>
+
+    <meta charset="utf-8">
+
+    <!--#include virtual="/grabbag/favicons.html" -->
+
+    <!--#include virtual="/grabbag/css.html" -->
+
+    <!--#include virtual="/grabbag/scripts.html" -->
+
+    <!--#include virtual="/grabbag/meta.html" -->
+    <meta name="description" content="404 Error">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header>
+
+            <!--#include virtual="/grabbag/topline.html" -->
+
+            <!--#include virtual="/grabbag/dropdown.html" -->
+
+            <!--#include virtual="/grabbag/navbar.html" -->
+
+        </header>
+
+        <div id="leftandright" class="cf">
+
+            <main id="left-panel">
+
+                <p id="whoops">Whoops!</p>
+
+                <div id="whoops-camera">
+                    <img src="/images/miscellaneous/xxxxxxx.png" alt="" title="Whoops!">
+                </div>
+
+                <p id="whoops-para">Looks like there was a problem with the page you tried to access. <span class="no-mobiles">Please select from the links above or to the right.</span><span class="no-website-inline no-print">Please select from the dropdown menu at the top-right.</span></p>
+
+                <span class="no-website-inline no-print"><br><br><br><br><br></span>
+
+            </main>
+
+            <aside id="right-panel">
+
+                <!--#include virtual="/grabbag/boxes.html" -->
+
+            </aside>
+
+        </div>
+
+        <!--#include virtual="/grabbag/scrollup-link.html" -->
+
+        <!--#include virtual="/grabbag/footline.html" -->
+
+    </div>
+
+    <script>
+        function preload(arrayOfImages) {
+            $(arrayOfImages).each(function () {
+                $('<img/>')[0].src = this;
+            });
+        }
+        preload([
+            <!--#include virtual="/grabbag/preload-images.html" -->
+        ]);
+    </script>
+
+    <!--#include virtual="/grabbag/bottom-javascripts.html" -->
+
+</body>
+
+</html>

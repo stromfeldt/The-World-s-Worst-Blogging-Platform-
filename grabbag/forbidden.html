@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en" class="no-js">
+
+<head>
+
+    <title>Forbidden (403)</title>
+
+    <meta charset="utf-8">
+
+    <!--#include virtual="/grabbag/favicons.html" -->
+
+    <!--#include virtual="/grabbag/css.html" -->
+
+    <!--#include virtual="/grabbag/scripts.html" -->
+
+    <!--#include virtual="/grabbag/meta.html" -->
+    <meta name="description" content="Forbidden (403)">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header>
+
+            <!--#include virtual="/grabbag/topline.html" -->
+
+            <!--#include virtual="/grabbag/dropdown.html" -->
+
+            <!--#include virtual="/grabbag/navbar.html" -->
+
+        </header>
+
+        <div id="leftandright" class="cf">
+
+            <main id="left-panel">
+
+                <p id="forbidden">Forbidden!</p>
+
+                <div id="forbidden-axes">
+                    <img src="/images/miscellaneous/XXXXX.png" alt="Axes" title="Forbidden!">
+                </div>
+
+                <p id="forbidden-para">Nothing to see here... please move along...</p>
+
+            </main>
+
+            <aside id="right-panel">
+
+                <!--#include virtual="/grabbag/boxes.html" -->
+
+            </aside>
+
+        </div>
+
+        <!--#include virtual="/grabbag/scrollup-link.html" -->
+
+        <!--#include virtual="/grabbag/footline.html" -->
+
+    </div>
+
+    <script>
+        function preload(arrayOfImages) {
+            $(arrayOfImages).each(function () {
+                $('<img/>')[0].src = this;
+            });
+        }
+        preload([
+            <!--#include virtual="/grabbag/preload-images.html" -->
+        ]);
+    </script>
+
+    <!--#include virtual="/grabbag/bottom-javascripts.html" -->
+
+</body>
+
+</html>

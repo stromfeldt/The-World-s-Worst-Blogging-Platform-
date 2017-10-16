@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en" class="no-js">
+
+<head>
+
+    <title>Podcasts</title>
+
+    <meta charset="utf-8">
+
+    <!--#include virtual="/grabbag/favicons.html" -->
+
+    <!--#include virtual="/grabbag/css.html" -->
+
+    <!--#include virtual="/grabbag/scripts.html" -->
+
+    <!--#include virtual="/grabbag/meta.html" -->
+    <meta name="description" content="Podcasts with AUTHOR NAME">
+    <meta name="robots" content="noindex">
+
+    <!--#include virtual="/grabbag/piwik.html" -->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header>
+
+            <!--#include virtual="/grabbag/topline.html" -->
+
+            <!--#include virtual="/grabbag/dropdown.html" -->
+
+            <nav id="navigation-container" class="no-mobiles">
+                <div class="navigation">
+                    <div class="navigation-list">
+                        <ul>
+                            <li><a href="#" class="nav"><span id="shovel-arrow"><img src="/images/miscellaneous/XXXXXX.png"></span><span id="FF2F-navbar-dropdown"><img src="/images/miscellaneous/XXXXX.png"></span></a></li>
+			                <li class="nav"><a href="/">HOME / BLOG</a></li>
+                            <li class="nav"><a href="/LINK"><span>HEADING</span></a></li>
+                            <li class="nav"><a href="/LINK">HEADING</a></li>
+                            <li class="nav"><a href="/LINK">HEADING</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+        <div id="leftandright" class="cf">
+
+            <main id="left-panel">
+
+                <div class="no-website-block no-print">
+
+                <!--#include virtual="/blog/intros/mobile-and-categories--podcasts/YEAR/YEAR-MM-DD.html" -->
+
+                </div>
+
+                <div class="no-mobiles">
+
+                <!--#include virtual="/blog/intros/standard--podcasts/YEAR/YEAR-MM-DD.html" -->
+
+
+                </div>
+
+            </main>
+
+            <aside id="right-panel">
+
+                <!--#include virtual="/grabbag/boxes.html" -->
+
+            </aside>
+
+        </div>
+
+        <!--#include virtual="/grabbag/scrollup-link.html" -->
+
+        <!--#include virtual="/grabbag/footline.html" -->
+
+    </div>
+
+    <script>
+        function preload(arrayOfImages) {
+            $(arrayOfImages).each(function () {
+                $('<img/>')[0].src = this;
+            });
+        }
+        preload([
+            <!--#include virtual="/grabbag/preload-images.html" -->
+        ]);
+    </script>
+
+    <!--#include virtual="/grabbag/bottom-javascripts.html" -->
+
+</body>
+
+</html>
