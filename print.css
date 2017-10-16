@@ -1,0 +1,134 @@
+/* DO-IT: Create and insert logo for top of print page */
+
+.no-website-block {
+    display: block !important;
+}
+.no-website-inline, .no-mobiles-yes-print {
+    display: inline !important;
+}
+header, #right-panel, #filed-under, #share, #comments, .buttons-year, .buttons-post-top, .buttons-post-bottom, footer, .no-print, .no-mobiles-no-print, #translation-boxes, .translation-box, .lines-0, .lines-1, .lines-2, .lines-2-sup, .lines-3, .lines-4, .lines-5, .lines-6, .lines-7, .lines-8, .lines-9 {
+    display: none !important;
+}
+.no-mobiles, .floatleft, .floatright, .floatcenter {
+    display: table !important;
+}
+body, #wrapper, #leftandright, #left-panel, main, article, h1 {
+    width: 650px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    left: 0px !important;
+    top: 0px !important;
+}
+#wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#left-panel {
+    width: 650px !important;
+}
+h1 {
+    position: relative;
+    float: left;
+    font-size: 18pt !important;
+    color: #000000 !important;
+    top: -27px !important;
+    line-height: 15px !important;
+}
+.dotted {
+    width: 650px !important;
+    border: 1px dotted #000000 !important;
+    border-style: none none dotted !important;
+}
+p {
+    width: 650px !important;
+    font-size: 10pt !important;
+    line-height: 14pt !important;
+    margin-bottom: 10pt !important;
+    color: #000000 !important;
+}
+blockquote {
+    padding: 0px !important;
+    margin: 0px 0px 10px 0px !important;
+}
+blockquote p {
+    width: 610px !important;
+    margin: 0px 0px 0px 40px !important;
+    font-size: 10pt !important;
+}
+time {
+    font-size: 10pt !important;
+}
+figcaption {
+    font-size: 9pt !important;
+    color: #777777 !important;
+}
+img {
+    margin: 0px !important;
+    padding: 0px !important;
+    left: auto !important;
+    right: auto !important;
+ /*   max-width: 400px; */
+}
+figure {
+    page-break-after: avoid;
+    page-break-before: avoid;
+    page-break-inside: avoid;
+}
+/* article a[href^=http]:after {
+    content: " <" attr(href)"> "; */
+}
+.top-for-print {
+    margin-top: 25px !important;
+}
+.continue {
+    margin-bottom: 25px !important;
+}
+.blog-title-and-date {
+    page-break-after: avoid;
+    page-break-before: avoid;
+    page-break-inside: avoid;
+}
+.blog-title-part {
+    font-size: 11pt !important;
+}
+.blog-title {
+    position: relative !important;
+    float: left !important;
+}
+.non-blog-title-2 {
+    position: relative !important;
+    top: -8px !important;
+}
+.blog-date {
+    position: relative;
+    float: right;
+}
+.para-points {
+    width: 610px !important;
+    font-size: 10pt !important;
+}
+#filed-under ul {
+    font-size: 11pt !important;
+    line-height: 16pt !important;
+}
+#parts {
+    font-size: 11pt !important;
+    line-height: 16pt !important;
+}
+#parts ul li {
+    display: inline;
+    padding: 0px 15px 0px 15px !important;
+}
+.footlinetext {
+    font-size: 9pt !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cc-print {
+    position: relative;
+    left: -5px;
+}
+@page {
+    margin: 1.5cm;
+}
