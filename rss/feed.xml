@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+    <channel>
+
+        <title>BLOG TITLE</title>
+        <link>http://DOMAIN.com</link>
+        <image>
+            <url>http://DOMAIN.com/images/favicons/favicon-32x32.png</url>
+            <title>BLOG TITLE</title>
+            <link>http://DOMAIN.com</link>
+            <width>32</width>
+            <height>32</height>
+        </image>
+        <description>BLURB</description>
+
+        <item>
+            <title>TITLE</title>
+            <link>http://DOMAIN.com/blog/YEAR/MONTH/TITLE</link>
+            <guid>http://DOMAIN.com/blog/YEAR/MONTH/TITLE</guid>
+            <pubDate>DAY (of week -- three characters), DAY (NUMBER) MONTH (three characters) YEAR 00:00:00 GMT</pubDate>
+            <description><![CDATA[
+
+                <div width:600px; margin-left:10px; margin-bottom:10px"><img src="http://DOMAIN.com/images/blog/YEAR/MONTH/DAY/XXXXX.jpg" style="border: solid 1px black" width="600"><figcaption style="margin-left:10px; text-align:center"></figcaption></div>
+
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+
+                ]]>
+            </description>
+        </item>
+
+    </channel>
+</rss>
